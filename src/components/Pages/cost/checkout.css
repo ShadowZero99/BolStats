@@ -1,0 +1,30 @@
+.theme {
+  background: rgb(128, 135, 209);
+  background: radial-gradient(
+    circle,
+    rgba(128, 135, 209, 1) 19%,
+    rgba(0, 212, 255, 1) 57%,
+    rgba(2, 0, 36, 1) 100%
+  );
+
+  margin: 0%;
+  padding: 0%;
+}
+
+.box {
+  box-shadow: 18px 17px 35px 3px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 18px 17px 35px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 18px 17px 35px 3px rgba(0, 0, 0, 0.75);
+
+  background: #7f00ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #e100ff,
+    #7f00ff
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

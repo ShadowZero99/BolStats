@@ -1,12 +1,10 @@
 .question {
   border: 1px solid var(--light-blue);
   border-radius: 3px;
-  width: 90%;
-  max-width: 60rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-bottom: 2rem;
+  width: 60%;
+  max-width: 10rem;
   box-shadow: var(--box-shadow);
+  margin-bottom: 2rem;
 }
 
 .question-title {
@@ -46,9 +44,9 @@ button.question-icon {
   color: var(--dark-text);
 }
 
-.u-text-center {
+/* .u-text-center {
   text-align: center;
-}
+} */
 
 /* Title */
 .u-title {

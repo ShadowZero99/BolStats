@@ -5,7 +5,10 @@ import { RiCloseLine } from "react-icons/ri";
 import { AiOutlineBars } from "react-icons/ai";
 import Button from "../UI/button/Button";
 import "../UI/button/Button.css";
-import logos from "../../assets/logos.png";
+// import logos from "../../assets/logos.png";
+import { Link } from "react-router-dom";
+//import Home from "../../components/Pages/Home/Home";
+//import Login from "../Pages/Login/login";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -29,23 +32,23 @@ const Navbar = () => {
           id={showMenu ? "nav-links-mobile" : "nav-links-mobile-hide"}
         >
           <li>
-            <a href="#Home">Home</a>
+            <Link to="/Home">Home</Link>
           </li>
           <li>
-            <a href="#Home">Login</a>
+            <Link to="/Login">Login</Link>
           </li>
 
           <li>
-            <a href="#download">Fees</a>
+            <Link to="/Fees">Fees</Link>
           </li>
           <li>
-            <a href="#subcribe">Subcribe</a>
+            <Link to="/Subscribe">Subscribe</Link>
           </li>
           <li>
             <a href="#subcribe">Contact US</a>
           </li>
           <li>
-            <a href="#features">Privacy Policy</a>
+            <Link to="/PrivacyPolicy">Privacy Policy</Link>
           </li>
 
           {/*<li className="nav-btn">
