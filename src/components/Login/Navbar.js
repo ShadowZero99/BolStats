@@ -51,11 +51,6 @@ const Navbar = () => {
             <Link to="/PrivacyPolicy">Privacy Policy</Link>
           </li>
 
-          {/*<li className="nav-btn">
-                
-                <a href="#faq" className='btn
-  btn-dark'>Get Stareted</a></li>*/}
-
           <li className="nav-btn">
             <Button text={"Need help?"} btnClass={"btn-dark"} href={"#faq"} />
           </li>
