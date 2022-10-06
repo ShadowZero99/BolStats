@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { SiAnaconda } from "react-icons/si";
+//import { SiAnaconda } from "react-icons/si";
 import { RiCloseLine } from "react-icons/ri";
 import { AiOutlineBars } from "react-icons/ai";
 import Button from "../UI/button/Button";
 import "../UI/button/Button.css";
-// import logos from "../../assets/logos.png";
+//import logos from "../../assets/logos.png";
 import { Link } from "react-router-dom";
 //import Home from "../../components/Pages/Home/Home";
 //import Login from "../Pages/Login/login";
@@ -18,11 +18,17 @@ const Navbar = () => {
   return (
     <nav className="container navbar">
       <div className="logo">
-        {/* <img src={logos} alt="phone" size={4}></img> */}
-        <SiAnaconda color="#fff" size={33} />
-
+        {/* <SiAnaconda color="#fff" size={33} /> */}
+        <div className="pp">
+          <img
+            src="/logos.png"
+            alt="phone"
+            style={{ width: "150px", height: "100px" }}
+          ></img>
+        </div>
         <p className="logo-text">
-          Bol<span>Stats</span>
+          Bol
+          <span>Stats</span>
         </p>
       </div>
 
@@ -39,9 +45,6 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link to="/Fees">Fees</Link>
-          </li>
-          <li>
             <Link to="/Subscribe">Subscribe</Link>
           </li>
           <li>
@@ -57,7 +60,11 @@ const Navbar = () => {
   btn-dark'>Get Stareted</a></li>*/}
 
           <li className="nav-btn">
-            <Button text={"Need help?"} btnClass={"btn-dark"} href={"#faq"} />
+            <Button
+              text={"Need help?"}
+              btnClass={"btn-dark"}
+              href={"#subcribe"}
+            />
           </li>
         </ul>
       </menu>

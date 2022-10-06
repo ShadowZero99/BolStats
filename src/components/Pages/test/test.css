@@ -1,0 +1,34 @@
+.outer {
+  display: flex;
+  width: 90%;
+  flex-direction: row;
+  height: 80vh;
+  background-color: #2463e9;
+  margin: 50px;
+  margin-top: 10px;
+  border-radius: 100px;
+  border-bottom-left-radius: 0;
+}
+.frist {
+  margin-bottom: 5px;
+  background-color: white;
+  width: 70%;
+  height: 95%;
+
+  border-bottom-right-radius: 100%;
+}
+.second {
+  width: 25%;
+  margin: 10px;
+}
+.feature {
+  color: aliceblue;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 20px;
+}
+.wrap {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+}

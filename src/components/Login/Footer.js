@@ -48,18 +48,18 @@ const Footer = () => {
             </p>
 
             <p>
-              <FaEnvelope /> &nbsp; Email: info@tenpopX.com
+              <FaEnvelope /> &nbsp; Email: info@Bolstats.com
             </p>
 
             <p>
-              <FaGlobe /> &nbsp; Website: www.tenpopX.com
+              <FaGlobe /> &nbsp; Website: www.Bolstates.com
             </p>
           </div>
         </div>
 
         <div className="footer-box">
           <img src={logo} alt="logo" />
-          <p className="u-small-text">&copy; Copyright 2021. tenpopX.com</p>
+          <p className="u-small-text">&copy; Copyright 2022. BolStats.com</p>
         </div>
       </div>
     </footer>

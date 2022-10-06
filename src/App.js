@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css";
 import Home from "./components/Pages/Home/Home";
 import Login from "./components/Pages/Login/login";
-import Checkout from "./components/Pages/cost/Checkout";
-import Cost from "./components/Pages/subscription/Cost";
+import Subscribe from "./components/Pages/test/Test";
+
 import Privacy from "./components/Pages/Privacy/Privacy";
 import { Route, Routes } from "react-router-dom";
 
@@ -14,8 +14,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/Home" element={<Home />} />
         <Route path="/Login" element={<Login />} />
-        <Route path="/Fees" element={<Checkout />} />
-        <Route path="/Subscribe" element={<Cost />} />
+        <Route path="/Subscribe" element={<Subscribe />} />
         <Route path="/PrivacyPolicy" element={<Privacy />} />
       </Routes>
     </div>

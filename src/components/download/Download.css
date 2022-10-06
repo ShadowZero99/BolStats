@@ -1,18 +1,16 @@
 section#download {
-  background: linear-gradient(
-    90deg,
-    rgba(45, 165, 255, 1) 45%,
-    rgba(1, 223, 245, 1) 100%
-  );
+  background: white;
 
   text-align: center;
-  color: var(--color-white);
+  color: black;
 }
 
 .download h2 {
   font-size: 3rem;
   font-weight: 200;
   line-height: 1.4;
+  color: #2463e9;
+  list-style: circle;
   text-transform: uppercase;
   margin: 1.5rem 0;
   padding-bottom: 1rem;
@@ -27,7 +25,7 @@ section#download {
 
   width: 10%;
   height: 1px;
-  background: var(--color-white);
+  background: black;
   transform: translate(-50%);
 }
 
@@ -40,7 +38,7 @@ section#download {
 }
 
 .download-icon {
-  border: 2px solid #fff;
+  border: 2px solid #2463e9;
   border-radius: 5px;
   width: 12rem;
   margin: 1rem 2rem;
@@ -49,4 +47,8 @@ section#download {
   align-items: center;
   padding: 1rem;
   font-size: 1.5rem;
+}
+
+.u-text-light {
+  color: black;
 }

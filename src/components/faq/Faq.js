@@ -7,9 +7,9 @@ import { questions } from "./data.js";
 const Faq = () => {
   return (
     <section id="faq">
-      <div className="container faq">
+      <div className="container faq" data-aos="zoom-in-up">
         <div className="u-title">
-          <MdOutlineLibraryBooks color="orangered" size={30} />
+          <MdOutlineLibraryBooks color="#2463e9" size={30} />
           <h2>FAQs</h2>
           <p className="u-text-small u-text-dark">
             Here are a few handpicked Problems from our clients. We think you'll

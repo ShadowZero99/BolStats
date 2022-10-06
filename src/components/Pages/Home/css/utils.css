@@ -5,10 +5,10 @@
 }
 
 .u-text-light {
-  color: var(--color-white);
+  color: black;
 }
 .u-text-dark {
-  color: var(--dark-text);
+  color: #2463e9;
 }
 
 .u-text-center {

@@ -13,7 +13,7 @@
   font-weight: 800;
   line-height: 1.4;
   text-transform: uppercase;
-  color: var(--color-white);
+  color: #2463e9;
   position: relative;
   padding-bottom: 2rem;
 }
@@ -47,7 +47,7 @@ h1 span:nth-child(3) {
 }
 
 .floating-icon {
-  background-color: var(--light-blue);
+  background-color: #2463e9;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;

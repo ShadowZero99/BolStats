@@ -10,19 +10,31 @@ const Question = ({ title, answer }) => {
   };
 
   return (
-    <div className="container question">
-      <div className="question-title">
-        <h4>{title}</h4>
-        <button className="question-icon" onClick={handleClick}>
-          {showAnswer ? (
-            <AiOutlineMinus color="red" />
-          ) : (
-            <AiOutlinePlus color="#1f93ff" />
-          )}
-        </button>
+    <div className="he">
+      <div className="container question">
+        <div>
+          <br></br>
+        </div>
+        <div className="question-title">
+          <h4>{title}</h4>
+          <button className="question-icon" onClick={handleClick}>
+            {showAnswer ? (
+              <AiOutlineMinus color="#2463e9" />
+            ) : (
+              <AiOutlinePlus color="#1f93ff" />
+            )}
+          </button>
+        </div>
+        <div className="question-answer">
+          {showAnswer && <p className="u-text-small">{answer}</p>}
+        </div>
+        <div>
+          <br></br>
+        </div>
       </div>
-      <div className="question-answer">
-        {showAnswer && <p className="u-text-small">{answer}</p>}
+
+      <div>
+        <br></br>
       </div>
     </div>
   );

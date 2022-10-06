@@ -4,7 +4,7 @@ import "./login.css";
 import Navbar from "../../../components/Login/Navbar";
 import Footer from "../../../components/Login/Footer";
 import Logins from "../../../components/Login/login";
-import Subscribe from "../../../components/Subscribe/Subscribe";
+import Subscribe from "../Login/Subscribe";
 const Login = () => {
   return (
     <main>

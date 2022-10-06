@@ -12,14 +12,15 @@
 }
 
 .logo-text {
-  font-size: 4rem;
+  font-size: 60px;
   font-weight: 300;
-  color: var(--color-white);
+  color: black;
 }
 
 .logo-text span {
+  font-size: 60px;
   font-weight: 600;
-  color: orangered;
+  color: burlywood;
 }
 
 .nav-links {
@@ -34,17 +35,17 @@
 .nav-links a {
   font-size: 1.6rem;
   font-weight: 300;
-  color: var(--color-white);
+  color: black;
   text-decoration: none;
   margin-right: 1rem;
 }
 
 .nav-links a:hover {
-  color: orangered;
+  color: burlywood;
 }
 
 a.btn {
-  border: 2px solid var(--color-white);
+  border: 2px solid black;
   border-radius: 50px;
   /* margin-left: 1rem; */
   font-weight: 500;
@@ -52,13 +53,13 @@ a.btn {
 }
 
 a.btn-dark {
-  border: 2px solid var(--color-white);
+  border: 2px solid black;
   background: transparent;
 }
 
 a.btn-orange {
   border: 2px solid transparent;
-  background: orangered;
+  background: burlywood;
   color: var(--color-white);
 }
 

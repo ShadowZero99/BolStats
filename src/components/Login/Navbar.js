@@ -18,6 +18,13 @@ const Navbar = () => {
   return (
     <nav className="container navbar">
       <div className="logo">
+        <div className="pp">
+          <img
+            src="/logos.png"
+            alt="phone"
+            style={{ width: "150px", height: "100px" }}
+          ></img>
+        </div>
         {/* <img src={logos} alt="phone" size={4}></img> */}
         <SiAnaconda color="#fff" size={33} />
 
@@ -39,9 +46,6 @@ const Navbar = () => {
           </li>
 
           <li>
-            <Link to="/Fees">Fees</Link>
-          </li>
-          <li>
             <Link to="/Subscribe">Subscribe</Link>
           </li>
           <li>
@@ -52,7 +56,11 @@ const Navbar = () => {
           </li>
 
           <li className="nav-btn">
-            <Button text={"Need help?"} btnClass={"btn-dark"} href={"#faq"} />
+            <Button
+              text={"Need help?"}
+              btnClass={"btn-dark"}
+              href={"#subcribe"}
+            />
           </li>
         </ul>
       </menu>

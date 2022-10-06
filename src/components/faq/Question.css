@@ -1,10 +1,13 @@
 .question {
-  border: 1px solid var(--light-blue);
-  border-radius: 3px;
+  border: 1px solid #2463e9;
+  border-spacing: 2rem;
+  border-radius: 10px;
   width: 60%;
   max-width: 10rem;
   box-shadow: var(--box-shadow);
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  padding-top: 2rem;
+  margin-top: 3rem;
 }
 
 .question-title {
@@ -38,7 +41,7 @@ button.question-icon {
 }
 
 .u-text-light {
-  color: var(--color-white);
+  color: black;
 }
 .u-text-dark {
   color: var(--dark-text);
