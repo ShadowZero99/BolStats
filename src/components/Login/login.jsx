@@ -41,7 +41,7 @@ const Logins = () => {
               <input type="text" placeholder="Your Password" />
             </div>
 
-            <div className="form-control">
+            <div className="form-controls">
               <button>Sign in</button>
             </div>
           </form>

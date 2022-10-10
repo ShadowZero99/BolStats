@@ -48,7 +48,7 @@ const Logins = () => {
                 placeholder="Your Message"
               />
             </div>
-            <div className="form-control">
+            <div className="form-controls">
               <button>Subscribe</button>
             </div>
           </form>

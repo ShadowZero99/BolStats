@@ -23,10 +23,11 @@ const Subscribes = () => {
               placeholder="Your Message"
             />
           </div>
-          <div className="form-control" data-aos="fade-right">
+          <div className="form-controls" data-aos="fade-right">
             <button>Subscribe</button>
           </div>
         </form>
+
         <div className="social-icons">
           <div className="social-icon">
             <TiSocialGooglePlus />
