@@ -13,6 +13,7 @@ section#subcribe {
   margin: 1.5rem 0;
   text-transform: uppercase;
   padding-bottom: 1rem;
+  color: #2463e9;
 }
 
 form > * {
@@ -47,6 +48,7 @@ form button {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: #2463e9;
 }
 
 .social-icon {

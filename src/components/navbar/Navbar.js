@@ -43,13 +43,14 @@ const Navbar = () => {
           <li>
             <Link to="/Login">Login</Link>
           </li>
+          <li>
+            <Link to="/Contactus">ContactUS</Link>
+          </li>
 
           <li>
             <Link to="/Subscribe">Subscribe</Link>
           </li>
-          <li>
-            <a href="#subcribe">Contact US</a>
-          </li>
+
           <li>
             <Link to="/PrivacyPolicy">Privacy Policy</Link>
           </li>
@@ -63,7 +64,7 @@ const Navbar = () => {
             <Button
               text={"Need help?"}
               btnClass={"btn-dark"}
-              href={"#subcribe"}
+              href={"#footer"}
             />
           </li>
         </ul>

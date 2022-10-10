@@ -32,17 +32,24 @@ const Logins = () => {
         </div>
 
         <div className="header-right">
-          <h1 data-aos="zoom-in">Sign In!</h1>
+          <h1 data-aos="zoom-in">Contact Us Now!</h1>
           <form>
+            <div className="form-control" data-aos="fade-right">
+              <input type="text" placeholder="Your name" />
+            </div>
             <div className="form-control" data-aos="fade-right">
               <input type="text" placeholder="Your Email" />
             </div>
             <div className="form-control" data-aos="fade-right">
-              <input type="text" placeholder="Your Password" />
+              <input
+                type="textarea"
+                rows="4"
+                cols="10"
+                placeholder="Your Message"
+              />
             </div>
-
             <div className="form-control">
-              <button>Sign in</button>
+              <button>Subscribe</button>
             </div>
           </form>
           <div className="social-icons">

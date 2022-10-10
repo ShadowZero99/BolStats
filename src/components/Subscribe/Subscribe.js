@@ -3,7 +3,7 @@ import "./Subscribe.css";
 import { TiSocialGooglePlus } from "react-icons/ti";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
-const Subscribe = () => {
+const Subscribes = () => {
   return (
     <section id="subcribe">
       <div className="container subscribe">
@@ -46,4 +46,4 @@ const Subscribe = () => {
   );
 };
 
-export default Subscribe;
+export default Subscribes;

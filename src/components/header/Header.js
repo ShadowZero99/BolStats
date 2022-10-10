@@ -35,8 +35,8 @@ const Header = () => {
         <div className="header-left" data-aos="fade-right">
           <h1>
             <span>Start selling on BolStats </span>
-            <span>Automate webshops</span>
-            <span>together with your team</span>
+            <span>Automate webshops together with your team</span>
+            <span></span>
           </h1>
           <p className="u-text-small u-text-light">
             BolStats is the all-in-one platform for starting and scaling a
@@ -62,7 +62,7 @@ const Header = () => {
         </div>
 
         <div className="header-right" data-aos="fade-left">
-          <Lottie options={defaultOptions} height={400} width={400} />
+          <Lottie options={defaultOptions} height={300} width={600} />
           {/* <img src={phoneHeader} alt="phone" /> */}
         </div>
       </div>

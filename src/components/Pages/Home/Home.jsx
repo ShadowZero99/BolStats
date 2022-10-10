@@ -7,7 +7,7 @@ import {
   Download,
   Subscribe,
   Faq,
-  Footer,
+  NewFooter,
 } from "../../../components";
 
 const Home = () => {
@@ -21,7 +21,7 @@ const Home = () => {
       <Download />
       <Subscribe />
       <Faq />
-      <Footer />
+      <NewFooter />
     </main>
   );
 };

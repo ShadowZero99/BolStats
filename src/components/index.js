@@ -4,4 +4,4 @@ export { default as Features } from "./features/Features";
 export { default as Download } from "./download/Download";
 export { default as Subscribe } from "./Subscribe/Subscribe";
 export { default as Faq } from "./faq/Faq";
-export { default as Footer } from "./footer/Footer";
+export { default as NewFooter } from "./footer/NewFooter";

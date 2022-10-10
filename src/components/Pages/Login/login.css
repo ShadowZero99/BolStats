@@ -5,10 +5,10 @@
   background: white;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Ubuntu:wght@300;500;700&display=swap");
 
 :root {
-  --font-family: "Poppins", sans-serif;
+  --font-family: "Ubuntu", sans-serif;
   --dark-blue: #0a1930;
   --light-blue: #1f93ff;
 
@@ -27,7 +27,7 @@
 }
 
 html {
-  font-size: 10px;
+  font-size: 12px;
 }
 
 body {
@@ -40,7 +40,7 @@ section {
 }
 
 .container {
-  max-width: 1000px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 10px;
 }

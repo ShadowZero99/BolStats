@@ -1,12 +1,11 @@
 import React from "react";
-import "./login.css";
 
 import Navbar from "../../../components/navbar/Navbar";
 
-import Logins from "../../../components/Login/login";
+import Logins from "../../../components/Pages/Contactus/login";
 import NewFooter from "../../footer/NewFooter";
 
-const Login = () => {
+const Contactus = () => {
   return (
     <main>
       <header className="header-bgs">
@@ -20,4 +19,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Contactus;

@@ -13,7 +13,9 @@ const Download = () => {
           Native app development eschews the complexity of creating a
           sustainable product that spans multiple platform app development and
           focuses on generating a competent design that stays close to the
-          target platform
+          target platform.Learn from experts who have been doing business
+          successfully for years via bol.com. Follow step by step with
+          experienced sellers.
         </p>
 
         <IconContext.Provider value={{ size: "15" }}>

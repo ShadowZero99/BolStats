@@ -30,7 +30,7 @@ const Features = () => {
 
         <div className="features-content">
           <div className="features-left" data-aos="fade-left">
-            <Lottie options={defaultOptions} height={400} width={400} />
+            <Lottie options={defaultOptions} height={400} width={600} />
             {/* <img src={phoneFeatures} alt="phone" data-aos="fade-right" /> */}
           </div>
           <div className="features-right" data-aos="fade-right">

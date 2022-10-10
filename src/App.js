@@ -6,6 +6,7 @@ import Subscribe from "./components/Pages/test/Test";
 
 import Privacy from "./components/Pages/Privacy/Privacy";
 import { Route, Routes } from "react-router-dom";
+import Contactus from "./components/Pages/Contactus/contact";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/Login" element={<Login />} />
         <Route path="/Subscribe" element={<Subscribe />} />
         <Route path="/PrivacyPolicy" element={<Privacy />} />
+        <Route path="/Contactus" element={<Contactus />} />
       </Routes>
     </div>
   );
