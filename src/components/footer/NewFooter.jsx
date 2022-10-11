@@ -1,95 +1,255 @@
-import React from "react";
-import { CDBFooter, CDBFooterLink, CDBBox, CDBBtn, CDBIcon } from "cdbreact";
-import logos from "../../assets/logos.png";
-
+import { Typography } from "@mui/material";
+import Grid from "@mui/material/Unstable_Grid2";
+import { Box } from "@mui/system";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import GoogleIcon from "@mui/icons-material/Google";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import { useState } from "react";
 const NewFooter = () => {
+  const [isHoverfb, setIsHoverfb] = useState(false);
+  const [isHovergg, setIsHovergg] = useState(false);
+  const [isHoverin, setIsHoverin] = useState(false);
+
+  const handleMouseEnterfb = () => {
+    setIsHoverfb(true);
+  };
+
+  const handleMouseLeavefb = () => {
+    setIsHoverfb(false);
+  };
+
+  const handleMouseEntergg = () => {
+    setIsHovergg(true);
+  };
+
+  const handleMouseLeavegg = () => {
+    setIsHovergg(false);
+  };
+
+  const handleMouseEnterin = () => {
+    setIsHoverin(true);
+  };
+
+  const handleMouseLeavein = () => {
+    setIsHoverin(false);
+  };
+
+  const boxStyle1 = {
+    width: "30px",
+    fontSize: "60px",
+    margin: "10px",
+    cursor: "pointer",
+    color: isHoverfb ? "blue" : "darklategrey",
+  };
+  const boxStyle2 = {
+    width: "30px",
+    fontSize: "60px",
+    margin: "10px",
+    cursor: "pointer",
+    color: isHovergg ? "blue" : "darklategrey",
+  };
+  const boxStyle3 = {
+    width: "30px",
+    fontSize: "60px",
+    margin: "10px",
+    cursor: "pointer",
+    color: isHoverin ? "blue" : "darklategrey",
+  };
   return (
-    <CDBFooter className="shadow">
-      <CDBBox
-        display="flex"
-        flex="column"
-        className="mx-auto py-5"
-        style={{ width: "90%" }}
+    <section id="footer">
+      <Box
+        sx={{ flexGrow: 1 }}
+        style={{
+          width: "80%",
+          marginLeft: "10% ",
+          display: "flex",
+          flexDirection: "row",
+        }}
       >
-        <CDBBox display="flex" justifyContent="between" className="flex-wrap">
-          <CDBBox>
-            <a href="/" className="d-flex align-items-center p-0 text-dark">
-              <img alt="logo" src={logos} width="100px" />
-              <span className="ml-3 h1 font-weight-bold ">BolStats</span>
-            </a>
-            <p className="my-3 text-secondary" style={{ width: "250px" }}>
-              We are creating High Quality Resources and tools to Aid developers
-              during the developement of their projects
-            </p>
-            <CDBBox display="flex" className="mt-4">
-              <CDBBtn flat color="dark">
-                <CDBIcon fab icon="facebook-f" />
-              </CDBBtn>
-              <CDBBtn flat color="dark" className="mx-3">
-                <CDBIcon fab icon="twitter" />
-              </CDBBtn>
-              <CDBBtn flat color="dark" className="p-2">
-                <CDBIcon fab icon="instagram" />
-              </CDBBtn>
-            </CDBBox>
-          </CDBBox>
-          <CDBBox>
-            <p className="h3 mb-4 " style={{ fontWeight: "600" }}>
-              Devwares
-            </p>
-            <CDBBox flex="column" style={{ cursor: "pointer", padding: "0" }}>
-              <CDBFooterLink className="fs-3 text-secondary">
-                Resources
-              </CDBFooterLink>
-              <CDBFooterLink className="fs-3 text-secondary">
-                About Us
-              </CDBFooterLink>
-              <CDBFooterLink className="fs-3 text-secondary">
-                Contact
-              </CDBFooterLink>
-              <CDBFooterLink className="fs-3 text-secondary">
-                Blog
-              </CDBFooterLink>
-            </CDBBox>
-          </CDBBox>
-          <CDBBox>
-            <p className="h3 mb-4" style={{ fontWeight: "600" }}>
+        <div style={{ width: "70%", paddingRight: "5%" }}>
+          <Typography
+            variant="h4"
+            sx={{
+              fontSize: "25px",
+              fontFamily: "ubuntu",
+              fontWeight: "bold",
+              color: "#45464a",
+              marginBottom: "40px",
+            }}
+          >
+            BolStats
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: "large",
+              fontFamily: "ubuntu",
+              fontWeight: "300",
+            }}
+          >
+            We are creating High Quality Resources and tools to Aid developers
+            during the developement of their projects
+          </Typography>
+          <FacebookIcon
+            style={boxStyle1}
+            onMouseEnter={handleMouseEnterfb}
+            onMouseLeave={handleMouseLeavefb}
+          />
+          <GoogleIcon
+            style={boxStyle2}
+            onMouseEnter={handleMouseEntergg}
+            onMouseLeave={handleMouseLeavegg}
+          />
+          <InstagramIcon
+            style={boxStyle3}
+            onMouseEnter={handleMouseEnterin}
+            onMouseLeave={handleMouseLeavein}
+          />
+        </div>
+        <Grid container spacing={16}>
+          <Grid xs={4}>
+            <Typography
+              variant="h4"
+              sx={{
+                fontSize: "25px",
+                fontFamily: "ubuntu",
+                fontWeight: "bold",
+                color: "#45464a",
+                marginBottom: "20px",
+              }}
+            >
+              Bolstats
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              Resources
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              About us
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              Contact
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              Blog
+            </Typography>
+          </Grid>
+          <Grid xs={4}>
+            <Typography
+              variant="h4"
+              sx={{
+                fontSize: "25px",
+                fontFamily: "ubuntu",
+                fontWeight: "bold",
+                color: "#45464a",
+                marginBottom: "20px",
+              }}
+            >
               Help
-            </p>
-            <CDBBox flex="column" style={{ cursor: "pointer", padding: "0" }}>
-              <CDBFooterLink className="fs-3 text-secondary">
-                Support
-              </CDBFooterLink>
-              <CDBFooterLink className="fs-3 text-secondary">
-                Sign Up
-              </CDBFooterLink>
-              <CDBFooterLink className="fs-3 text-secondary">
-                Sign In
-              </CDBFooterLink>
-            </CDBBox>
-          </CDBBox>
-          <CDBBox>
-            <p className="h3 mb-4" style={{ fontWeight: "600" }}>
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              Support
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              Sign Up
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              Sign In
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              Register
+            </Typography>
+          </Grid>
+          <Grid xs={3}>
+            <Typography
+              variant="h4"
+              sx={{
+                fontSize: "25px",
+                fontFamily: "ubuntu",
+                fontWeight: "bold",
+                color: "#45464a",
+                marginBottom: "20px",
+              }}
+            >
               Products
-            </p>
-            <CDBBox flex="column" style={{ cursor: "pointer", padding: "0" }}>
-              <CDBFooterLink className="fs-3 text-secondary">
-                Windframe
-              </CDBFooterLink>
-              <CDBFooterLink className=" fs-3 text-secondary myclass">
-                Loop
-              </CDBFooterLink>
-              <CDBFooterLink className="fs-3 text-secondary">
-                Contrast
-              </CDBFooterLink>
-            </CDBBox>
-          </CDBBox>
-        </CDBBox>
-        <small className="text-center mt-5">
-          &copy; Devwares, 2020. All rights reserved.
-        </small>
-      </CDBBox>
-    </CDBFooter>
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              Windframe
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              Loop
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "large",
+                fontFamily: "ubuntu",
+                fontWeight: "300",
+              }}
+            >
+              Cotracts
+            </Typography>
+          </Grid>
+        </Grid>
+      </Box>
+    </section>
   );
 };
 

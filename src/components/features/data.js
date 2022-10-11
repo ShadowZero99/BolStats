@@ -1,7 +1,11 @@
 import React from "react";
-import { FaAccessibleIcon, FaGg, FaGitAlt } from "react-icons/fa";
-import { SiDatabricks } from "react-icons/si";
-import { MdConnectWithoutContact } from "react-icons/md";
+import {
+  FaAccessibleIcon,
+  FaGitAlt,
+  FaAdn,
+  FaBloggerB,
+  FaConfluence,
+} from "react-icons/fa";
 
 export const featureList = [
   {
@@ -12,13 +16,13 @@ export const featureList = [
   },
   {
     id: 2,
-    icon: <SiDatabricks color="0a1930" size={22} />,
+    icon: <FaAdn color="0a1930" size={22} />,
     heading: "HIGHLY SCALABLE",
     text: "We carefully architect each web platform to ensure high scalability, vertically as well as horizontally.",
   },
   {
     id: 3,
-    icon: <MdConnectWithoutContact color="0a1930" size={22} />,
+    icon: <FaBloggerB color="0a1930" size={22} />,
     heading: "PERFORMANCE ARCHITECTURE",
     text: "  We carefully architect each web app to ensure high performance and low infrastructure costs. ",
   },
@@ -30,7 +34,7 @@ export const featureList = [
   },
   {
     id: 5,
-    icon: <FaGg color="0a1930" size={22} />,
+    icon: <FaConfluence color="0a1930" size={22} />,
     heading: "FAILPROOF AUDITS",
     text: "Every web app is built with enterprise-grade security and undergoes rigorous PEN testing. ",
   },

@@ -36,7 +36,6 @@ const Header = () => {
           <h1>
             <span>Start selling on BolStats </span>
             <span>Automate webshops together with your team</span>
-            <span></span>
           </h1>
           <p className="u-text-small u-text-light">
             BolStats is the all-in-one platform for starting and scaling a
@@ -54,15 +53,15 @@ const Header = () => {
               href={"#faq"}
             /> */}
             <Button
-              text={"How It Works"}
-              btnClass={"btn-orange"}
-              href={"#features"}
+              text={"How It Works?"}
+              btnClass={"btn-dark"}
+              href={"#faq"}
             />
           </div>
         </div>
 
         <div className="header-right" data-aos="fade-left">
-          <Lottie options={defaultOptions} height={300} width={600} />
+          <Lottie options={defaultOptions} height={300} width={500} />
           {/* <img src={phoneHeader} alt="phone" /> */}
         </div>
       </div>

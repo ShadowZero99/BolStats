@@ -18,16 +18,16 @@ const Download = () => {
           experienced sellers.
         </p>
 
-        <IconContext.Provider value={{ size: "15" }}>
+        <IconContext.Provider value={{ size: "25" }}>
           <div className="download-icons">
             <div className="download-icon" data-aos="flip-left">
+              {/* <p className="rt"> Android</p> */}
               <GrAndroid />
-              <p>Android</p>
             </div>
 
             <div className="download-icon" data-aos="flip-left">
+              {/* <p className="rt">ios</p> */}
               <FaApple />
-              <p>ios</p>
             </div>
           </div>
         </IconContext.Provider>

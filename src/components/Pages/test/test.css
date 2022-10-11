@@ -1,11 +1,12 @@
 .outer {
   display: flex;
-  width: 90%;
+  width: 86%;
   flex-direction: row;
   height: 80vh;
   background-color: #2463e9;
   margin: 50px;
   margin-top: 10px;
+  margin-left: 8%;
   border-radius: 70px;
   border-bottom-left-radius: 0;
 }
@@ -32,7 +33,25 @@
   flex-direction: row;
   margin-right: 20px;
 }
-.faq {
-  margin: 20px;
+
+.faqs {
+  margin-left: 8%;
   font-size: larger;
+  width: 70%;
+  padding-right: 5%;
+}
+.faq {
+  /* margin-left: 8%; */
+  font-size: larger;
+  width: 100%;
+  padding-right: 5%;
+}
+.lotifaq {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+}
+.lottie {
+  margin-left: 3%;
+  margin-right: 6%;
 }

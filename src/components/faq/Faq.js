@@ -1,7 +1,7 @@
 import React from "react";
 import { MdOutlineLibraryBooks } from "react-icons/md";
 import Question from "./Question";
-import "./Question.css";
+import "./Faq.css";
 import { questions } from "./data.js";
 
 const Faq = () => {

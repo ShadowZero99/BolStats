@@ -94,16 +94,26 @@ const Feature = () => {
         color="secondary"
         size="large"
         sx={{
+          width: "170px",
+          height: "45px",
           marginTop: "30px",
           backgroundColor: "white",
           borderRadius: "15px",
           fontSize: "20px",
-          color: "blue",
-          borderColor: "blue",
-          // boxShadow: " 0px 0px 5px 5px",
+          boxShadow: "3px 3px 3px #000000",
         }}
       >
-        Subscribe
+        <Typography
+          variant="button"
+          sx={{
+            color: "#2463e9",
+            fontFamily: "ubuntu",
+            textTransform: "lowercase",
+            fontSize: "21px",
+          }}
+        >
+          Subscribe
+        </Typography>
       </Button>
     </div>
   );

@@ -49,7 +49,7 @@ const Logins = () => {
               />
             </div>
             <div className="form-controls">
-              <button>Subscribe</button>
+              <button>Contact Us</button>
             </div>
           </form>
           <div className="social-icons">

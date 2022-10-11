@@ -1,13 +1,14 @@
 a {
   font-size: 1.6rem;
   font-weight: 300;
-  color: white;
+  color: #2463e9;
   text-decoration: none;
   margin-right: 1rem;
 }
 
 a:hover {
   color: black;
+  border: 2px solid black;
 }
 
 a.btn {
@@ -26,5 +27,5 @@ a.btn-dark {
 a.btn-orange {
   border: 2px solid transparent;
   background: #2463e9;
-  color: var(--color-white);
+  color: #2463e9;
 }

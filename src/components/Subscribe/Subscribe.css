@@ -4,6 +4,7 @@ section#subcribe {
   background-size: cover;
   background-attachment: fixed;
   color: var(--color-white);
+  margin-top: -4rem;
 }
 
 .subscribe h2 {
@@ -25,8 +26,8 @@ form > * {
 form input {
   padding: 1rem;
   background: transparent;
-  border: none;
-  border-radius: 5px 0 0 5px;
+  border: 1px solid gray;
+  border-radius: 10px;
   color: black;
   outline: cadetblue;
   width: 80%;
@@ -36,12 +37,13 @@ form input {
 form button {
   padding: 1rem;
   background: var(--form-button);
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 30px;
   color: #fff;
   font-size: 2rem;
   font-weight: 500;
   border: 2px solid var(--form-button);
   cursor: pointer;
+  width: 15rem;
 }
 
 .social-icons {
@@ -57,7 +59,7 @@ form button {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
-  border: 1px solid #fff;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,6 +70,8 @@ form button {
 
 .social-icon:hover {
   background: var(--light-blue);
+  /* border: 1px solid #fff; */
+  color: white;
 }
 
 @media screen and (max-width: 600px) {

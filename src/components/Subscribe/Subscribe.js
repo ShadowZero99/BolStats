@@ -10,7 +10,7 @@ const Subscribes = () => {
         <h2 data-aos="zoom-in">Contact Us Now!</h2>
         <form>
           <div className="form-control" data-aos="fade-right">
-            <input type="text" placeholder="Your name" />
+            <input type="text" placeholder="Your Name" />
           </div>
           <div className="form-control" data-aos="fade-right">
             <input type="text" placeholder="Your Email" />
@@ -24,7 +24,7 @@ const Subscribes = () => {
             />
           </div>
           <div className="form-controls" data-aos="fade-right">
-            <button>Subscribe</button>
+            <button>Contact Us</button>
           </div>
         </form>
 
