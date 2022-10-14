@@ -3,7 +3,7 @@ import "./privacy.css";
 
 const Data = () => {
   return (
-    <div style={{ fontSize: "20px", marginRight: "25px", marginLeft: "25px" }}>
+    <div className="base">
       <Slide
         in="false"
         direction="left"
@@ -11,15 +11,7 @@ const Data = () => {
         unmountOnExit
         timeout={2000}
       >
-        <h2
-          style={{
-            textAlign: "center",
-            fontFamily: "ubuntu",
-            marginBottom: "80px",
-            fontSize: "40px",
-            color: "#2463e9",
-          }}
-        >
+        <h2 className="title">
           <b>PRIVACY POLICY</b>
         </h2>
       </Slide>

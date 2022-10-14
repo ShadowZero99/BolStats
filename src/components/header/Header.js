@@ -34,15 +34,16 @@ const Header = () => {
       <div className="container header">
         <div className="header-left" data-aos="fade-right">
           <h1>
-            <span>Start selling on BolStats </span>
-            <span>Automate webshops together with your team</span>
+            <span>ALL YOUR STATISTICS IN ONE PLACE</span>
+            <span>THE BOLSTATS APP GIVES YOU REAL-TIME INSIGHTS</span>
           </h1>
           <p className="u-text-small u-text-light">
-            BolStats is the all-in-one platform for starting and scaling a
-            profitable BolStats business.In the BolStats blueprint course you
-            will learn all the steps to start your BolStats business. Get all
-            the tools you need to become a successful BolStats seller.Automate
-            and grow your business through the store management tools.
+            BolStats is a 105 app specially developed for sellers on the bol.com
+            platform. The app gives you insight into how your online store is
+            doing. We offer a cheap price especially for the starting
+            entrepreneur, for that price you get an extensive app. in the app
+            you can see statistics about how your store is doing. You will also
+            receive a notification with a new order and a registered return.
           </p>
           <div className="header-cta">
             {/* <Button
@@ -52,25 +53,27 @@ const Header = () => {
               Class={"btn-dark"}
               href={"#faq"}
             /> */}
-            <Button
+            {/* <Button
               text={"How It Works?"}
               btnClass={"btn-dark"}
               href={"#faq"}
-            />
+            /> */}
           </div>
         </div>
 
         <div className="header-right" data-aos="fade-left">
-          <Lottie options={defaultOptions} height={300} width={500} />
+          <div id="lottie">
+            <Lottie options={defaultOptions} />
+          </div>
           {/* <img src={phoneHeader} alt="phone" /> */}
         </div>
       </div>
 
-      <div className="floating-icon">
+      {/* <div className="floating-icon">
         <a href="#faq">
           <BsMouse color="#fff" size={25} className="mouse" />
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -1,6 +1,7 @@
 import * as React from "react";
 import AOS from "aos";
 import { useEffect } from "react";
+import "./contact.css";
 
 import * as animationData from "./cc.json";
 import { TiSocialGooglePlus } from "react-icons/ti";
@@ -28,7 +29,9 @@ const Logins = () => {
     <section id="header">
       <div className="container header">
         <div className="header-left" data-aos="fade-right">
-          <Lottie options={defaultOptions} height={450} width={750} />
+          <div id="lottien">
+            <Lottie options={defaultOptions} />
+          </div>
         </div>
 
         <div className="header-right">
@@ -43,7 +46,7 @@ const Logins = () => {
             <div className="form-control" data-aos="fade-right">
               <input
                 type="textarea"
-                rows="4"
+                rows="5"
                 cols="10"
                 placeholder="Your Message"
               />

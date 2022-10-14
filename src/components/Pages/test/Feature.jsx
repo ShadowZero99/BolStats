@@ -1,10 +1,19 @@
 import Slide from "@mui/material/Slide";
 import CheckIcon from "@mui/icons-material/Check";
 import Button from "@mui/material/Button";
-import { Typography } from "@mui/material";
+import { ThemeProvider, Typography } from "@mui/material";
 import Grow from "@mui/material/Grow";
+import { createTheme } from "@mui/material/styles";
 
 const Feature = () => {
+  const theme = createTheme({
+    palette: {
+      secondary: {
+        main: "#FCC106",
+      },
+    },
+  });
+
   const details = [
     { text: "free for all", time: 1000 },
     { text: "life time access", time: 2000 },
@@ -15,7 +24,7 @@ const Feature = () => {
   return (
     <div className="second">
       <Typography
-        align="center"
+        className="typo"
         sx={{
           color: "white",
           fontSize: "30px",
@@ -88,33 +97,34 @@ const Feature = () => {
           month
         </Typography>
       </Typography>
-
-      <Button
-        variant="outlined"
-        color="secondary"
-        size="large"
-        sx={{
-          width: "170px",
-          height: "45px",
-          marginTop: "30px",
-          backgroundColor: "white",
-          borderRadius: "15px",
-          fontSize: "20px",
-          boxShadow: "3px 3px 3px #000000",
-        }}
-      >
-        <Typography
-          variant="button"
+      <ThemeProvider theme={theme}>
+        <Button
+          variant="contained"
+          color="secondary"
+          size="large"
           sx={{
-            color: "#2463e9",
-            fontFamily: "ubuntu",
-            textTransform: "lowercase",
-            fontSize: "21px",
+            width: "170px",
+            height: "45px",
+            marginTop: "30px",
+            backgroundColor: "white",
+            borderRadius: "15px",
+            fontSize: "20px",
           }}
         >
-          Subscribe
-        </Typography>
-      </Button>
+          <Typography
+            className="buttex"
+            variant="button"
+            sx={{
+              color: "#2463e9",
+              fontFamily: "ubuntu",
+              textTransform: "lowercase",
+              fontSize: "21px",
+            }}
+          >
+            Subscribe
+          </Typography>
+        </Button>
+      </ThemeProvider>
     </div>
   );
 };

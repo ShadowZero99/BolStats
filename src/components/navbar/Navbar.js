@@ -17,6 +17,13 @@ const Navbar = () => {
   };
   return (
     <nav className="container navbar">
+      <div className="menu-icons" onClick={toggleMenu}>
+        {showMenu ? (
+          <RiCloseLine color="#000" size={30} />
+        ) : (
+          <AiOutlineBars color="#000" size={27} />
+        )}
+      </div>
       <div className="logo">
         {/* <SiAnaconda color="#fff" size={33} /> */}
         <div className="pp">
@@ -44,16 +51,16 @@ const Navbar = () => {
             <Link to="/Login">Login</Link>
           </li>
           <li>
-            <Link to="/Contactus">ContactUs</Link>
+            <Link to="/Contactus">Contact</Link>
           </li>
 
           <li>
             <Link to="/Subscribe">Subscribe</Link>
           </li>
 
-          <li>
+          {/* <li>
             <Link to="/PrivacyPolicy">Privacy Policy</Link>
-          </li>
+          </li> */}
 
           {/*<li className="nav-btn">
                 
@@ -61,21 +68,10 @@ const Navbar = () => {
   btn-dark'>Get Stareted</a></li>*/}
 
           <li className="nav-btn">
-            <Button
-              text={"Need help?"}
-              btnClass={"btn-dark"}
-              href={"#footer"}
-            />
+            <Button text={"help?"} btnClass={"btn-dark"} href={"#footer"} />
           </li>
         </ul>
       </menu>
-      <div className="menu-icons" onClick={toggleMenu}>
-        {showMenu ? (
-          <RiCloseLine color="#fff" size={30} />
-        ) : (
-          <AiOutlineBars color="#fff" size={27} />
-        )}
-      </div>
     </nav>
   );
 };

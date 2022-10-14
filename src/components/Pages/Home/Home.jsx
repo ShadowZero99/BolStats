@@ -18,9 +18,9 @@ const Home = () => {
         <Header />
       </header>
       <Features />
-      <Download />
-      <Subscribe />
-      <Faq />
+      {/* <Download /> */}
+      {/* <Subscribe /> */}
+      {/* <Faq /> */}
       <NewFooter />
     </main>
   );

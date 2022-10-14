@@ -1,6 +1,7 @@
 import * as React from "react";
 import AOS from "aos";
 import { useEffect } from "react";
+import "./login.css";
 
 import * as animationData from "./cc.json";
 import { TiSocialGooglePlus } from "react-icons/ti";
@@ -28,7 +29,9 @@ const Logins = () => {
     <section id="header">
       <div className="container header">
         <div className="header-left" data-aos="fade-right">
-          <Lottie options={defaultOptions} height={450} width={750} />
+          <div id="lottiep">
+            <Lottie options={defaultOptions} />
+          </div>
         </div>
 
         <div className="header-right">
@@ -38,7 +41,11 @@ const Logins = () => {
               <input type="text" placeholder="Your Email" />
             </div>
             <div className="form-control" data-aos="fade-right">
-              <input type="text" placeholder="Your Password" />
+              <input
+                type="password"
+                id="password"
+                placeholder="Your Password"
+              />
             </div>
 
             <div className="form-controls">

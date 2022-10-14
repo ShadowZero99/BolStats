@@ -29,7 +29,7 @@ const Test = () => {
   };
 
   useEffect(() => {
-    AOS.init({ duration: 3000 });
+    AOS.init({ duration: 2000 });
   }, []);
 
   const data = {
@@ -77,6 +77,7 @@ const Test = () => {
             </div>
           </Grow>
         </div>
+
         <Feature />
       </div>
       <div className="lotifaq">

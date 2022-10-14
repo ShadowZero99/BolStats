@@ -1,5 +1,4 @@
 import Navbar from "../../navbar/Navbar";
-
 import "./privacy.css";
 import Data from "./Data";
 import NewFooter from "../../footer/NewFooter";

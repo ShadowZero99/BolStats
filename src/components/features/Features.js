@@ -22,15 +22,17 @@ const Features = () => {
       <div className="container features">
         <div className="u-title" data-aos="fade-up">
           <BsFillBookmarkStarFill color="#2463e9" size={30} />
-          <h2>Core Features</h2>
-          <p className="u-text-small u-text-dark">
+          <h2>ADVANTAGES</h2>
+          {/* <p className="u-text-small u-text-dark">
             Why choose us for web development services?
-          </p>
+          </p> */}
         </div>
 
         <div className="features-content">
           <div className="features-left" data-aos="fade-left">
-            <Lottie options={defaultOptions} height={650} width={550} />
+            <div id="lotties">
+              <Lottie options={defaultOptions} />
+            </div>
             {/* <img src={phoneFeatures} alt="phone" data-aos="fade-right" /> */}
           </div>
           <div className="features-right" data-aos="fade-right">
