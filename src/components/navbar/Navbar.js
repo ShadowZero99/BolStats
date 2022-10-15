@@ -26,17 +26,25 @@ const Navbar = () => {
       </div>
       <div className="logo">
         {/* <SiAnaconda color="#fff" size={33} /> */}
-        <div className="pp">
-          <img
-            src="/logos.png"
-            alt="phone"
-            style={{ width: "150px", height: "100px" }}
-          ></img>
-        </div>
-        <p className="logo-text">
-          Bol
-          <span>Stats</span>
-        </p>
+        <Link to="/Home" style={{ borderStyle: "none" }}>
+          <div className="pp">
+            {/* <RouterLink to="/Login"> */}
+
+            <img
+              src="/logos.png"
+              alt="phone"
+              style={{ width: "150px", height: "100px" }}
+            ></img>
+
+            {/* </RouterLink> */}
+          </div>
+        </Link>
+        <Link to="/Home" style={{ borderStyle: "none" }}>
+          <p className="logo-text">
+            Bol
+            <span>Stats</span>{" "}
+          </p>
+        </Link>
       </div>
 
       <menu>
@@ -68,7 +76,7 @@ const Navbar = () => {
   btn-dark'>Get Stareted</a></li>*/}
 
           <li className="nav-btn">
-            <Button text={"help?"} btnClass={"btn-dark"} href={"#footer"} />
+            <Button text={"Help?"} btnClass={"btn-dark"} href={"#footer"} />
           </li>
         </ul>
       </menu>

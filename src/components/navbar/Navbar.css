@@ -14,21 +14,24 @@
 }
 
 .logo {
-  margin-left: 5.5rem;
+  margin-left: 7rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
 .logo-text {
   font-size: 50px;
   font-weight: 300;
   color: black;
+  cursor: pointer;
 }
 
 .logo-text span {
   font-weight: 300;
   color: #2463e9;
+  cursor: pointer;
 }
 
 .nav-links {
@@ -117,6 +120,7 @@ a.btn-orange {
     font-weight: 300;
     color: black;
     margin-left: -2rem;
+    cursor: pointer;
   }
 
   .navbar .menu-icons {
@@ -144,6 +148,7 @@ a.btn-orange {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
 
   .navbar #nav-links-mobile {
@@ -200,5 +205,62 @@ a.btn-orange {
   .navbar #nav-links-mobile li:last-child,
   .navbar #nav-links-mobile-hide li:last-child {
     border-bottom: none;
+  }
+}
+@media screen and (max-width: 2400px) {
+  .logo {
+    margin-left: -35%;
+  }
+  .nav-links li {
+    margin-left: 4rem;
+    margin-right: 8rem;
+  }
+}
+
+@media screen and (max-width: 2000px) {
+  .logo {
+    margin-left: -25%;
+  }
+  .nav-links li {
+    margin-left: -3rem;
+    margin-right: 12rem;
+  }
+}
+
+@media screen and (max-width: 1700px) {
+  .logo {
+    margin-left: -15%;
+  }
+  .nav-links li {
+    margin-right: 10rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .logo {
+    margin-left: -5%;
+  }
+  .nav-links li {
+    margin-right: 8rem;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .logo {
+    margin-left: -5%;
+  }
+  .nav-links li {
+    margin-left: 1rem;
+    margin-right: 8rem;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .logo {
+    margin-left: 15rem;
+  }
+  .nav-links li {
+    margin-left: -3rem;
+    margin-right: 7rem;
   }
 }

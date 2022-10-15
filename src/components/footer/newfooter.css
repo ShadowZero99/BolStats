@@ -1,6 +1,6 @@
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 120px;
+  height: 120px;
 }
 .logodiv {
   display: flex;
@@ -20,7 +20,12 @@
   padding-right: 15%;
 }
 
-@media only screen and (max-width: 800px) {
+.link {
+  font-weight: 300;
+  border-style: none;
+}
+
+@media only screen and (max-width: 900px) {
   .footer {
     width: 100%;
   }

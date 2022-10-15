@@ -7,24 +7,28 @@ import { Link } from "react-router-dom";
 
 const NewFooter = () => {
   return (
-    <section className="footer">
+    <section id="footer">
       <Box className="box" sx={{ flexGrow: 1 }}>
         <div className="side">
-          <div className="logodiv">
-            <img src={logo} className="logo" alt="logo" />
-            <Typography
-              variant="h4"
-              align="center"
-              sx={{
-                fontSize: "30px",
-                fontFamily: "ubuntu",
-                fontWeight: "bold",
-                color: "#45464a",
-                marginTop: "30px",
-              }}
-            >
-              BolStats
-            </Typography>
+          <div className="logodiv" style={{ marginLeft: "-10%" }}>
+            <Link to="/home" style={{ borderStyle: "none" }}>
+              <img src={logo} className="logo" alt="logo" />
+            </Link>
+            <Link to="/home" style={{ borderStyle: "none" }}>
+              <Typography
+                variant="h4"
+                align="center"
+                sx={{
+                  fontSize: "35px",
+                  fontFamily: "ubuntu",
+                  fontWeight: "bold",
+                  color: "#45464a",
+                  marginTop: "40px",
+                }}
+              >
+                BolStats
+              </Typography>
+            </Link>
           </div>
           <div className="para">
             <Typography
@@ -45,7 +49,6 @@ const NewFooter = () => {
             spacing={{ xs: 2, sm: 6, md: 8, lg: 20, xl: 34 }}
             className="grid"
           >
-            {/* <div className="g1div"> */}
             <Grid xs={8} md={4} lg={5} className="g1">
               <Typography
                 variant="h4"
@@ -59,34 +62,12 @@ const NewFooter = () => {
               >
                 Devwares
               </Typography>
-              <Typography
-                sx={{
-                  fontSize: "large",
-                  fontFamily: "ubuntu",
-                  fontWeight: "300",
+              <Link
+                to="/Home"
+                style={{
+                  borderStyle: "none",
                 }}
               >
-                Resources
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: "large",
-                  fontFamily: "ubuntu",
-                  fontWeight: "300",
-                }}
-              >
-                About us
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: "large",
-                  fontFamily: "ubuntu",
-                  fontWeight: "300",
-                }}
-              >
-                Contact
-              </Typography>
-              <Link to="/PrivacyPolicy">
                 <Typography
                   sx={{
                     fontSize: "large",
@@ -94,12 +75,61 @@ const NewFooter = () => {
                     fontWeight: "300",
                   }}
                 >
-                  privacy policy
+                  Resources
+                </Typography>
+              </Link>
+              <Link
+                to="/Home"
+                style={{
+                  borderStyle: "none",
+                }}
+              >
+                <Typography
+                  style={{ marginTop: "-15px" }}
+                  sx={{
+                    fontSize: "large",
+                    fontFamily: "ubuntu",
+                    fontWeight: "300",
+                  }}
+                >
+                  About us
+                </Typography>
+              </Link>
+              <Link
+                to="/Contactus"
+                style={{
+                  borderStyle: "none",
+                }}
+              >
+                <Typography
+                  style={{ marginTop: "-15px" }}
+                  sx={{
+                    fontSize: "large",
+                    fontFamily: "ubuntu",
+                    fontWeight: "300",
+                  }}
+                >
+                  Contact
+                </Typography>
+              </Link>
+              <Link
+                to="/Privacypolicy"
+                style={{
+                  borderStyle: "none",
+                }}
+              >
+                <Typography
+                  style={{ marginTop: "-15px" }}
+                  sx={{
+                    fontSize: "large",
+                    fontFamily: "ubuntu",
+                    fontWeight: "300",
+                  }}
+                >
+                  Privacy Policy
                 </Typography>
               </Link>
             </Grid>
-            {/* </div> */}
-            {/* <div className="g2div"> */}
             <Grid xs={8} md={4} lg={4} className="g2">
               <Typography
                 variant="h4"
@@ -113,36 +143,58 @@ const NewFooter = () => {
               >
                 Help
               </Typography>
-              <Typography
-                sx={{
-                  fontSize: "large",
-                  fontFamily: "ubuntu",
-                  fontWeight: "300",
+
+              <Link
+                to="/Home"
+                style={{
+                  borderStyle: "none",
                 }}
               >
-                Support
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: "large",
-                  fontFamily: "ubuntu",
-                  fontWeight: "300",
+                <Typography
+                  sx={{
+                    fontSize: "large",
+                    fontFamily: "ubuntu",
+                    fontWeight: "300",
+                  }}
+                >
+                  Support
+                </Typography>
+              </Link>
+              <Link
+                to="/Login"
+                style={{
+                  borderStyle: "none",
                 }}
               >
-                Sign In
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: "large",
-                  fontFamily: "ubuntu",
-                  fontWeight: "300",
+                <Typography
+                  style={{ marginTop: "-15px" }}
+                  sx={{
+                    fontSize: "large",
+                    fontFamily: "ubuntu",
+                    fontWeight: "300",
+                  }}
+                >
+                  Sign In
+                </Typography>
+              </Link>
+              <Link
+                to="/Home"
+                style={{
+                  borderStyle: "none",
                 }}
               >
-                blog
-              </Typography>
+                <Typography
+                  style={{ marginTop: "-15px" }}
+                  sx={{
+                    fontSize: "large",
+                    fontFamily: "ubuntu",
+                    fontWeight: "300",
+                  }}
+                >
+                  blog
+                </Typography>
+              </Link>
             </Grid>
-            {/* </div> */}
-            {/* <div className="g3div"> */}
             <Grid xs={8} md={4} lg={3} className="g3">
               <Typography
                 variant="h4"
@@ -156,35 +208,57 @@ const NewFooter = () => {
               >
                 Products
               </Typography>
-              <Typography
-                sx={{
-                  fontSize: "large",
-                  fontFamily: "ubuntu",
-                  fontWeight: "300",
+              <Link
+                to="/Home"
+                style={{
+                  borderStyle: "none",
                 }}
               >
-                Windframe
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: "large",
-                  fontFamily: "ubuntu",
-                  fontWeight: "300",
+                <Typography
+                  sx={{
+                    fontSize: "large",
+                    fontFamily: "ubuntu",
+                    fontWeight: "300",
+                  }}
+                >
+                  Windframe
+                </Typography>
+              </Link>
+              <Link
+                to="/Home"
+                style={{
+                  borderStyle: "none",
                 }}
               >
-                Loop
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: "large",
-                  fontFamily: "ubuntu",
-                  fontWeight: "300",
+                <Typography
+                  style={{ marginTop: "-15px" }}
+                  sx={{
+                    fontSize: "large",
+                    fontFamily: "ubuntu",
+                    fontWeight: "300",
+                  }}
+                >
+                  Loop
+                </Typography>
+              </Link>
+              <Link
+                to="/Home"
+                style={{
+                  borderStyle: "none",
                 }}
               >
-                Contracts
-              </Typography>
+                <Typography
+                  style={{ marginTop: "-15px" }}
+                  sx={{
+                    fontSize: "large",
+                    fontFamily: "ubuntu",
+                    fontWeight: "300",
+                  }}
+                >
+                  Contracts
+                </Typography>
+              </Link>
             </Grid>
-            {/* </div> */}
           </Grid>
         </div>
       </Box>
